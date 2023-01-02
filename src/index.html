@@ -3,27 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+    <title>Random Card Dealer</title>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
       integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
       crossorigin="anonymous"
     />
-    <link rel="shortcut icon" href="./4geeks.ico" />
+    <!-- Connecting Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Monoton&family=Nunito&display=swap" rel="stylesheet">
+    <!-- Connecting Stylesheet -->
+    <link  rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+      <h1>Random Card Dealer</h1>
+      <h2><span id="timer">10</span> seconds until the card changes</h2>
+      <div class="input">
+        <h2>Please, enter the width and height of the card:</h2>
+        <input type="text" placeholder="Width (in px)" class="input-field" id="width"><input type="text" placeholder="Height (in px)" class="input-field" id="height">
       </div>
-    </div>
+      <!-- Building the structure of the card -->
+      <div class="card">
+        <div class="top-suit">&spades;</div>
+        <div class="number">7</div>
+        <div class="bottom-suit">&spades;</div>
+      </div>
+      <!-- Update button -->
+      <div class="button">
+        <button class="update-button" onClick="window.location.reload()">Change Card</button>
+      </div>
+    <!-- Connecting JS -->
+    <script src="app.js"></script>
   </body>
 </html>

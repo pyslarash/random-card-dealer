@@ -1,1 +1,107 @@
-@import "~bootstrap/dist/css/bootstrap.min.css";
+/* Body BG and making it border-box, so it won't move anything around */
+body {
+    background: radial-gradient(#31983c, #1c4922);
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+/* Just some H1 editing */
+
+h1 {
+    color: white;
+    text-align: center;
+    font-weight: 100;
+    font-size: 60px;
+    font-family: 'Monoton', cursive;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+}
+
+/* The .card class. Margin: auto to center it.  */
+
+.card {
+    margin: auto;
+    background: white;
+    height: 400px;
+    width: 250px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+/* Top Suit. Aligned text left. */
+
+.top-suit {
+    height: 25%;
+    font-size: 80px;
+    text-align: left;
+    color: black;    
+}
+
+/* Bottom Suit. Aligned text right. */
+
+.bottom-suit {
+    height: 25%;
+    font-size: 80px;
+    text-align: right;
+    color: black;    
+}
+
+/* Number of the card. The different styles with the browser comments basically center the number in the middle vertically. */
+
+.number {
+    height: 50%;
+    font-size: 80px;
+    text-align: center;
+    /* Internet Explorer 10 */
+    display:-ms-flexbox;
+    -ms-flex-pack:center;
+    -ms-flex-align:center;
+    /* Firefox */
+    display:-moz-box;
+    -moz-box-pack:center;
+    -moz-box-align:center;
+    /* Safari, Opera, and Chrome */
+    display:-webkit-box;
+    -webkit-box-pack:center;
+    -webkit-box-align:center;
+    /* W3C */
+    display:box;
+    box-pack:center;
+    box-align:center;
+}
+
+.update-button {
+    height: 50px;
+    width: 150px;
+    margin-top: 50px;
+    font-size: large;
+    border-radius: 5px;
+    border: none;
+    background-color: #e87b60;
+    color: white;
+}
+
+.update-button:hover {
+    background-color:#ce7d8c;
+    color: white;
+    cursor: pointer;
+}
+
+.button, .input {
+    text-align: center;
+}
+
+.input-field {
+    height: 50px;
+    width: 150px;
+    margin: 0px 15px 35px;
+    font-size: x-large;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+}
